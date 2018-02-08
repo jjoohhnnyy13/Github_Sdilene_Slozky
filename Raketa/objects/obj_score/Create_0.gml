@@ -1,0 +1,1 @@
+body = 0; //kdž se vytvoří objekt - body se nastaví na 0

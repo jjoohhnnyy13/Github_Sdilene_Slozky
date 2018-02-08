@@ -1,0 +1,10 @@
+alp1 = 0;
+alp2 = 0;
+alp_plus1 = 1;
+alp_plus2 = 0;
+alarm[0] = 120;
+alarm[1] = 200;
+global.vol_snd = 5;
+global.vol_mus = 5;
+global.full = 0;
+global.gain_snd = 1;

@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_animace_vybuch, 0, view_xview, view_yview, 1, 1, 0, c_white, draw_alpha);
