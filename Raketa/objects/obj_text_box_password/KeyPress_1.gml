@@ -19,5 +19,5 @@ if keyboard_check(vk_tab) {
 if (keyboard_check_pressed(vk_enter)) and (string_length(obj_text_box_password.input_text) > 0) {
 //	room_goto(room_menu);
 		loginResult = "Logging in ...";
-		requestId = api_post_data("{ \"username\":\""+ obj_text_box_login.input_text +"\", \"password\":\""+input_text+"\" }");
+		//requestId = api_post_data("{ \"username\":\""+ obj_text_box_login.input_text +"\", \"password\":\""+input_text+"\" }");
 }
