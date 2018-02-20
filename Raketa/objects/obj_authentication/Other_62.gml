@@ -9,7 +9,7 @@ if ds_map_find_value(async_load, "id") == get
 		user_data(r_str);
 		var data = user_data(undefined);
 		show_debug_message(data[?"Token"]);
-		//Testovaci komentar
+		//Testovaci komentar - odstranit po testech
 		
 				}
    else
