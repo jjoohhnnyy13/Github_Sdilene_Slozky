@@ -8,4 +8,4 @@ ds_map_add(dataMap, "password", password);
 
 var data = json_encode(dataMap);
 
-return api_communication("/auth/login", "post", data);
+return api_communication("/AppLogin", "post", data);
