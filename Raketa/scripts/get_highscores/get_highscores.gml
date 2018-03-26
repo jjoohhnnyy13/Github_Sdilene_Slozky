@@ -1,12 +1,4 @@
-//upload_highscore(nickname, score)
-var hostUrl = "http://lostrocket.tobegames.com/leaderboard/Upload";
-var _nickname = argument0; //<--- jmeno
-var _score = argument1; //<--- cislo
-
-
-
-var postData="{\"points\": \""+string(_score) +"\"}";
-
+var hostUrl = "http://lostrocket.tobegames.com/leaderboard/GetMyPosition";
 
 var userData = user_data(undefined);
 
@@ -15,8 +7,6 @@ var token = userData[?"Token"];
 if token == undefined {
 	return;
 }
-
-var contentLength = string_length(postData);
 
 var map = ds_map_create();
 ds_map_add(map, "Host", "lostrocket.tobegames.com");
@@ -31,4 +21,4 @@ ds_map_add(map, "Accept-Encoding", "gzip,deflate,sdch");
 ds_map_add(map, "Accept-Language", "en-GB,en-US;q=0.8,en;q=0.6");
 ds_map_add(map, "Cookie", "request_method=GET; _InAppPurchases_session=69bb6ef6eec2b");
 
-request = http_request(hostUrl, "POST", map, postData);
+request = http_request(hostUrl, "get", map, undefined);

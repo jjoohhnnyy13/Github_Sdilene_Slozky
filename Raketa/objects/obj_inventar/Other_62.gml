@@ -7,21 +7,7 @@ if httpStatus == 200 {
     
 	var dsMap = json_decode(json);
   	
-	show_debug_message("init inv");
-  
-	if ds_map_exists(dsMap, "1"){
-		show_debug_message("set stity");
-		obj_raketa.stit_level = real(dsMap[?"1"]);
-		if(obj_raketa.stit_level > 0){
-			obj_raketa.stit = true;
-		}
-	}
 	
-	if ds_map_exists(dsMap, "2") {
-		show_debug_message("set rakety");
-		obj_raketa.rakety = real(dsMap[?"2"]);
-		
-	}
 
 } else {
 	switch httpStatus {
